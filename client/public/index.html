@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/imgs/logo.webp" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Ether Core official site"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/imgs/logo.webp" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Ether Core</title>
+  </head>
+  <body style="position: relative;">
+    <noscript>
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <style>
+        section.noscript {
+          width: 100%;
+          height: 100vh;
+        }
+
+        img.error {
+          width: 90%;
+          height: auto;
+        }
+
+        p.error-p {
+          text-decoration: none;
+        }
+
+        div.error-img {
+          width: auto;
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+        }
+
+        div.container-noscript {
+          width: 100%;
+          height: auto;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        div.noscript-text-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        div.noscript-text-wrapper {
+          width: 100%;
+          height: auto;
+        }
+      </style>
+      <section class="noscript">
+        <div class="container-noscript">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="error-img">
+                  <img src="./imgs/logo.webp" class="error" alt="error"/>
+                </div>
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="noscript-text-container">
+                  <div class="noscript-text-wrapper">
+                    <h1>Something went wrong :(</h1>
+                    <p class="error-p fs-4">
+                      As far as I know, you're here because you have disabled scripts (JavaScript) in your browser. We want to provide the best quality of services, which is why scripts are required on our website. Turn them on and come back to us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

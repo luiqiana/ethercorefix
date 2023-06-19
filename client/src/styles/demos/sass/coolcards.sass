@@ -1,0 +1,125 @@
+section#coolcards
+	width: 100%
+	height: calc(100vh - 56px)
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)
+	overflow: hidden
+	display: flex
+	justify-content: center
+	align-items: center
+
+div.coolcards-general
+	position: relative
+	cursor: pointer
+
+	&:active
+		div.coolcards-two
+			transform: rotate(-5deg) translateX(90px) scale(0.9)
+
+		div.coolcards-three
+			transform: rotate(5deg) translateX(-90px) scale(0.9)
+
+div.coolcards-card
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #000000
+	width: 100px
+	height: 100px
+	font-size: 1.5rem
+	margin: auto
+	border-radius: 10px
+	text-transform: uppercase
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	font-weight: 500
+
+	&.coolcards-one
+		background: #ffffff
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 3
+
+	&.coolcards-two
+		background: #0b8c94
+		position: absolute
+		right: 0
+		z-index: 2
+		transform: rotate(-10deg) translate(8px, 8px)
+
+	&.coolcards-three
+		background: #00bfc9
+		position: absolute
+		left: 0
+		z-index: 1
+		transform: rotate(10deg) translate(-5px, 7px)
+
+	div.coolcards-move
+		transition: all .5s cubic-bezier(.5, .40, .10, 1)
+
+div.coolcards-info
+	margin: 0 auto
+	@media(min-width: 1200px)
+	width: 100%
+
+	@media(min-width: 768px) and (max-width: 1199px)
+		text-align: center
+		width: 50%
+
+	@media(max-width: 767px)
+		text-align: center
+		width: 100%
+
+	h3
+		color: #ffffff
+	p
+		color: #ffffff
+
+a.coolcards-button-a
+	width: 100%
+	text-decoration: none
+	color: aqua
+
+	div.coolcards-btn-hover
+		border-radius: 0.375rem
+		margin-left: auto
+		margin-right: auto
+
+		div.coolcards-btn-group
+			border-radius: 0.375rem
+			transition: 0.5s all
+			background-color: rgba(0,0,0,0)
+
+			&:hover
+				box-shadow: 0 0 15px 3px #ffffff
+
+			span.coolcards-button-text
+				width: calc(100% - 56px)
+				height: 56px
+				text-align: center
+				display: flex
+				justify-content: center
+				-webkit-text-fill-color: #000000
+				font-size: 25px
+
+			span.coolcards-button-icon
+				width: 56px
+
+				&:after
+					position: absolute
+					content: ''
+					background: rgba(0,0,0,0.2)
+					width: 56px
+					height: 56px
+					left: 0
+					top: 0
+					bottom: 0
+					right: 0
+					border-top-left-radius: 0.375rem
+					border-bottom-left-radius: 0.375rem
+
+				svg.coolcards-icon
+					width: 100%
+					height: 100%
